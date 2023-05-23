@@ -1,0 +1,45 @@
+#background {
+  background-image: url('./background.png');
+}
+
+#topbar {
+  left: 558px;
+}
+
+#game {
+  left: 558px;
+  top: 814px;
+  width: 680px;
+  height: 182px;
+}
+
+#runner0 {
+  left: 0;
+  top: 686px;
+  width: 554px;
+}
+
+#runner1 {
+  display: none;
+}
+
+#timer {
+  left: 1242px;
+  top: 814px;
+  width: 678px;
+  height: 182px;
+}
+
+#timerMain {
+  font-size: 100px !important;
+}
+
+#timerSmall {
+  font-size: 50px !important;
+}
+
+#commentatorPlatesContainer {
+  left: 0px;
+  top: 750px;
+  width: 554px;
+}

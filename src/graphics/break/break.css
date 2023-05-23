@@ -1,0 +1,141 @@
+@import url('../graphic.css');
+
+body {
+  background-image: url('./break.png');
+}
+
+#donationTotal, #nowPlaying, #host {
+  position: fixed;
+}
+
+#donationTotal {
+  left: 651px;
+  top: 0px;
+  width: 618px;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#topbar {
+  left: 1283px;
+}
+#topbarInner {
+  justify-content: end !important;
+}
+
+#donationDollar {
+  font-size: 180px;
+  color: rgb(190,255,190);
+}
+#donationDollars {
+  font-size: 180px;
+}
+
+#donationCents {
+  margin-left: -10px;
+  font-size: 90px;
+}
+
+#nowPlaying {
+  text-align: right;
+  left: 0;
+  top: 1005px;
+  width: 860px;
+  height: 70px;
+}
+
+#host {
+  display: flex;
+  align-items: center;
+  left: 1060px;
+  top: 1000px;
+  width: 860px;
+  height: 80px;
+}
+
+.game {
+  background: linear-gradient(135deg, rgba(64,70,60,1) 0%,rgba(54,61,49,1) 50%,rgba(39,44,36,1) 51%,rgba(64,70,60,1) 100%); 
+}
+
+#hostName {
+  font-size: 60px;
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+}
+
+#hostPronouns {
+  background-color: rgb(16,64,64);
+  font-size: 30px;
+  margin-left: 20px;
+  padding: 2px 4px 2px 4px;
+  border: 1px solid gray;
+}
+
+#hostPronouns:empty {
+  display: none;
+}
+
+#schedule {
+  position: fixed;
+  left: 1283px;
+  top: 44px;
+  width: 637px;
+  height: 952px;
+  overflow: hidden;
+}
+
+#scheduleInner {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 637px;
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.scheduleItem {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.header, .category, .players {
+  font-size: 20px;
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 5px 2px 5px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.header {
+  border-top: 1px solid gray;
+}
+
+.category, .players {
+  border-bottom: 1px solid gray;
+}
+
+.game {
+  padding: 5px 5px 5px 5px;
+  font-size: 60px;
+  width: 597px;
+  border: 2px solid gray;
+}
+
+.footer {
+  display: flex;
+  width: 597px;
+  justify-content: space-between;
+  align-items: center;
+}

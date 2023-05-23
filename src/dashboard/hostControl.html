@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./hostControl/hostControl.css">
+    <script src="./hostControl/manageCurrentHost.ts" type="module" defer></script>
+    <script src="./hostControl/commercials.ts" type="module" defer></script>
+	</head>
+	<body>
+    <div>
+      <div id="manageCurrentHost">
+        <span></span>
+        <span>Name</span>
+        <span>Pronouns</span>
+
+        <span>Displayed Host</span>
+        <span id="displayedHostName"></span>
+        <span id="displayedHostPronouns"></span>
+
+        <span>Next Host</span>
+        <input type="text" id="scheduledHostName"></input>
+        <input type="text" id="scheduledHostPronouns"></input>
+      </div>
+      <button id="update">Update Host</button>
+    </div>
+    <div>
+      <span>Run Twitch Ads</span>
+      <button id="commercial60" >1m00s</button>
+      <button id="commercial90" >1m30s</button>
+      <button id="commercial120">2m00s</button>
+      <button id="commercial150">2m30s</button>
+      <button id="commercial180">3m00s</button>
+    </div>
+    <div>
+      <span id="commercialLeft"></span>
+    </div>
+	</body>
+</html>

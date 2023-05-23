@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <link rel="stylesheet" href="./game/game.css"></link>
+		<link class="layout 4x3_p1" rel="stylesheet" href="./game/layouts/4x3_p1/style.css"></link>
+		<link class="layout 3x2_p1" rel="stylesheet" href="./game/layouts/3x2_p1/style.css"></link>
+		<link class="layout 16x9_p1a" rel="stylesheet" href="./game/layouts/16x9_p1a/style.css"></link>
+		<link class="layout 16x9_p1b" rel="stylesheet" href="./game/layouts/16x9_p1b/style.css"></link>
+		<link class="layout 4x3_p2" rel="stylesheet" href="./game/layouts/4x3_p2/style.css"></link>
+		<link class="layout 16x9_p2" rel="stylesheet" href="./game/layouts/16x9_p2/style.css"></link>
+    <script src="./game/game.ts" type="module" defer></script>
+	</head>
+	<body>
+		<div id="topbar">
+			<div id="topbarInner">
+				<span id="event">Speedromizer III benefitting The Trevor Project</span>
+				<span id="warning">WARNING: Flashing lights during gameplay</span>
+				<span id="realtime"></span>
+			</div>
+		</div>
+		<div id="game">
+			<span id="gameName"></span>
+			<span id="gameSeperator"></span>
+			<span id="gameInfo">
+				<span id="category"></span>
+				<span id="platformAndYear"></span>
+				<span id="estimate"></span>
+			</span>
+		</div>
+		<template id="plate">
+			<div class="plate">
+				<div class="talking"></div>
+				<div class="nameDisplay">
+					<span class="name"></span>
+					<span class="host">Host</span>
+					<span class="pronouns"></span>
+				</div>
+				<div class="twitchDisplay">
+					<img class="twitchLogo" src="./game/img/twitchLogo.png"></img>
+					<span class="twitch"></span>
+				</div>
+			</div>
+		</template>
+		<div id="runnerPlatesContainer"></div>
+		<div id="timer">
+			<canvas width=1000 height=250 id="timerCanvas"></canvas>
+			<div id="timerTextContainer">
+				<div id="timerTextContainerInner">
+					<span id="timerMain">0:00:00</span>
+					<span id="timerSmall">.2</span>
+				</div>
+			</div>
+		</div>
+		<div id="commentatorPlatesContainer"></div>
+		<div id="background"></div>
+	</body>
+</html>

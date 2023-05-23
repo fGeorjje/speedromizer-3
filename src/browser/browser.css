@@ -1,0 +1,16 @@
+@import url('https://fonts.cdnfonts.com/css/bahnschrift');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --text-shadow: black;
+}
+
+body {
+  font-family: 'Bahnschrift';
+  color: var(--text-color);
+  text-shadow: 0px 0px 1px var(--text-shadow);
+}

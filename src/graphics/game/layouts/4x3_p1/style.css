@@ -1,0 +1,37 @@
+#background {
+  background-image: url('./background.png');
+}
+
+#topbar {
+  left: 650px;
+}
+
+#game {
+  left: 0;
+  top: 0;
+  width: 646px;
+  height: 202px;
+}
+
+#runner0 {
+  left: 0;
+  top: 572px;
+  width: 646px;
+}
+
+#runner1 {
+  display: none;
+}
+
+#timer {
+  left: 0px;
+  top: 636px;
+  width: 646px;
+  height: 90px;
+}
+
+#commentatorPlatesContainer {
+  left: 0px;
+  top: 730px;
+  width: 646px;
+}

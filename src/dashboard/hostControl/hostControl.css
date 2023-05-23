@@ -1,0 +1,9 @@
+#manageCurrentHost {
+  display: grid;
+  grid-template-columns: min-content 150px 100px;
+  column-gap: 10px;
+}
+
+#manageCurrentHost > * {
+  white-space: nowrap;
+}

@@ -1,0 +1,17 @@
+#commentaryInputs {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  column-gap: 10px;
+}
+
+.name, .twitch {
+  width: 100px;
+}
+
+.pronouns {
+  width: 60px;
+}
+
+#commentaryInputs > * {
+  white-space: nowrap;
+}

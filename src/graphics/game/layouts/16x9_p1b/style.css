@@ -1,0 +1,66 @@
+#background {
+  background-image: url('./background.png');
+}
+
+#topbar {
+  left: 376px;
+}
+
+#game {
+  left: 558px;
+  top: 914px;
+  width: 804px;
+  height: 80px;
+}
+
+#gameName {
+  left: 10px;
+  top: 2px !important;
+  width: calc(100% - 20px) !important;
+  height: calc(100% - 26px) !important;
+  text-shadow: 0 0 1px black !important;
+}
+
+#gameSeperator {
+  top: calc(100% - 22px) !important;
+  width: calc(100% - 20px) !important;
+  height: 1px !important;
+}
+
+#gameInfo {
+  top: calc(100% - 20px) !important;
+  height: 20px !important;
+}
+
+#runner0 {
+  left: 0;
+  top: 916px;
+  width: 554px;
+  height: 80px !important;
+}
+
+#runner1 {
+  display: none;
+}
+
+#timer {
+  left: 0px;
+  top: 812px;
+  width: 372px;
+  height: 100px;
+}
+
+#timerMain {
+  font-size: 60px !important;
+}
+
+#timerSmall {
+  font-size: 30px !important;
+}
+
+#commentatorPlatesContainer {
+  left: 1366px;
+  top: 916px;
+  width: 554px;
+  height: 80px !important;
+}

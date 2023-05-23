@@ -1,0 +1,23 @@
+button {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+#oscframe {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#refreshvdo {
+  position: fixed;
+  top: 0%;
+  left: 80%;
+  width: 20%;
+  height: 4%;
+}

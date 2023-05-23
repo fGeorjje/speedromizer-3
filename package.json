@@ -1,0 +1,104 @@
+{
+  "name": "speedromizer-3",
+  "version": "1.0.0",
+  "description": "Speedromizer 3 Layouts / Stream Management",
+  "browserslist": "Chrome 95",
+  "scripts": {
+    "autofix": "npx eslint src/**/*.ts --fix",
+    "clean": "run-p clean:*",
+    "clean:cache": "trash node_modules/.cache",
+    "clean:graphics": "trash graphics",
+    "clean:dashboard": "trash dashboard",
+    "clean:extension": "trash extension",
+    "clean:shared": "trash shared",
+    "build": "run-p build:*",
+    "build:graphics": "parcel build src/graphics/**/*.html --dist-dir graphics --public-url .",
+    "build:dashboard": "parcel build src/dashboard/**/*.html --dist-dir dashboard --public-url .",
+    "build:extension": "npx tsc -b src/extension/tsconfig.json",
+    "watch": "run-p watch:*",
+    "watch:graphics": "parcel watch src/graphics/**/*.html --dist-dir graphics --public-url ./",
+    "watch:dashboard": "parcel watch src/dashboard/**/*.html --dist-dir dashboard --public-url ./",
+    "git": "run-s git:*",
+    "git:add": "git add .",
+    "git:commit": "git commit -m autocommit",
+    "git:push": "git push -u origin HEAD",
+    "start": "run-s clean:extension clean:shared build:extension start:nodecg",
+    "start:andpush": "run-p git start",
+    "start:nodecg": "node ../../index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgeorjje/speedromizer-3.git"
+  },
+  "author": "Paul Schwandes",
+  "bugs": {
+    "url": "https://github.com/fgeorjje/speedromizer-3/issues"
+  },
+  "homepage": "https://github.com/fgeorjje/speedromizer-3#readme",
+  "nodecg": {
+    "compatibleRange": "^2.0.0",
+    "bundleDependencies": {
+      "nodecg-speedcontrol": "^2.5.0"
+    },
+    "dashboardPanels": [
+      {
+        "name": "Live Layout Control",
+        "title": "Live Layout Control",
+        "file": "liveLayoutControl.html",
+        "width": 4
+      },
+      {
+        "name": "Host Control",
+        "title": "Host Control",
+        "file": "hostControl.html",
+        "width": 4
+      },
+      {
+        "name": "OSC",
+        "title": "OSC",
+        "file": "osc.html",
+        "fullbleed": true
+      },
+      {
+        "name": "Beefweb",
+        "title": "Beefweb",
+        "file": "beefweb.html",
+        "fullbleed": true
+      }
+    ],
+    "graphics": [
+      {
+        "file": "game.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "break.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "devDependencies": {
+    "@nodecg/types": "^2.1.1",
+    "@types/textfit": "^2.4.2",
+    "@types/websocket": "^1.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "eslint": "^8.40.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "npm-run-all": "^4.1.5",
+    "trash-cli": "^5.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.9",
+    "obs-websocket-js": "^5.0.2",
+    "speedcontrol-util": "^0.6.1",
+    "textfit": "^2.4.0",
+    "tiltify-api-client-v5": "^1.0.1",
+    "websocket": "^1.0.34"
+  }
+}
